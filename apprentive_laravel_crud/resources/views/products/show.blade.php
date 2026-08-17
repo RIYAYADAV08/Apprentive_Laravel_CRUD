@@ -1,0 +1,2 @@
+@extends('layout')
+@section('content')<div class="card"><h1>{{ $product->name }}</h1><p><strong>Description:</strong> {{ $product->description ?: '—' }}</p><p><strong>Price:</strong> ₹{{ number_format((float)$product->price,2) }}</p><p><strong>Quantity:</strong> {{ $product->quantity }}</p><a class="btn secondary" href="{{ route('products.index') }}">Back</a> <a class="btn primary" href="{{ route('products.edit',$product) }}">Edit</a></div>@endsection
