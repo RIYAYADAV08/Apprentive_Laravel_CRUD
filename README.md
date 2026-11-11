@@ -123,11 +123,7 @@ php artisan migrate
 
 # 7. Start the development server
 php artisan serve
-```
 
-Open **http://127.0.0.1:8000** in your browser.
-
----
 
 ## ✅ Validation Rules
 
